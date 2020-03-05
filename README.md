@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tester le repo
 
-Things you may want to cover:
+* Tu peux tester directement via [heroku](https://exo-ajax.herokuapp.com/)
+* Sinon en clonant avec un `git clone https://github.com/charlie-carpene/exo-ajax.git` puis :
+  * `rails db:create db:migrate db:seed`
+  * ensuite lancer le server via `rails server`
 
-* Ruby version
+## Ou j'en suis
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* A la fin du 2.6 : le bouton marquer comme non lu fonctionne mais je change pas de status.
+* Je suis preneur d'autres façon pour le "lu/non lu", particulièrement si tu l'as fait avec le controller ou autre chose que des fichiers .js.erb
