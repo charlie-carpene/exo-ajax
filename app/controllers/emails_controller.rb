@@ -4,7 +4,7 @@ class EmailsController < ApplicationController
   end
 
   def create
-    @email = Email.create(object: Faker::Cannabis.buzzword, body: Faker::Lorem.paragraph)
+    @email = Email.create(object: Faker::Cannabis.buzzword, body: Faker::Lorem.paragraph, read: false)
     respond_to do |format|
       format.html { redirect_to root_path }
       format.js { }
@@ -27,5 +27,13 @@ class EmailsController < ApplicationController
       format.js { }
     end
     @email.destroy
+  end
+
+  def update
+    @email = Email.find_by(id: params[:id])
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js { }
+    end
   end
 end

@@ -6,7 +6,7 @@
       <%= button_to email_path(email.id), method:"delete", :class => "ml-3 btn-danger", remote: true do %>
         Supprimer
       <% end %>
-      <%= button_to emails_path, method:"delete", :class => "ml-3 btn-info" do %>
+      <%= button_to email_path(email.id), method:"put", :class => "ml-3 btn-info", remote: true do %>
         Marquer comme non lu
       <% end %>
     </div>

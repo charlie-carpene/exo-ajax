@@ -1,1 +1,7 @@
 document.querySelector("div.col-10").innerHTML = "<%= j render 'emailbody', email: @email %>";
+
+if (<%= @email.read %> === false) {
+  document.querySelector("div.col-2 a[href='/emails/" + <%= @email.id %> + "']").parentNode.classList.toggle("bg-light");
+  <%= @email.read = true %>
+  <%= @email.save %>
+};

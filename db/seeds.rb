@@ -21,5 +21,5 @@ Email.destroy_all
 end
 
 5.times do
-  Email.create(object: Faker::Cannabis.buzzword, body: Faker::Lorem.paragraph)
+  Email.create(object: Faker::Cannabis.buzzword, body: Faker::Lorem.paragraph, read: false)
 end
