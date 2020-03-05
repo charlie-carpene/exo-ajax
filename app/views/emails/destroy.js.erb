@@ -1,0 +1,2 @@
+document.querySelector("div.col-2 a[href='/emails/" + <%= @email.id %> + "']").parentNode.parentNode.remove();
+document.querySelector("div.col-10").children[0].children[0].innerHTML = "<%= j @email.object %> has been deleted";

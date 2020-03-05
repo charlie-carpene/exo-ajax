@@ -1,0 +1,6 @@
+alert("le fichier JS est exécuté!");
+array = ["Comic/Graphic Novel", "Essay", "Folklore"];
+a = array.indexOf("<%= @category.title %>");
+
+console.log(a);
+document.getElementsByTagName("ul")[1].getElementsByTagName("ul")[a].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>");

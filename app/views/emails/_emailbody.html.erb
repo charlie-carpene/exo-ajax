@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <h1><%= email.object %></h1>
+    <p><%= email.body %></p>
+    <div class="row">
+      <%= button_to email_path(email.id), method:"delete", :class => "ml-3 btn-danger", remote: true do %>
+        Supprimer
+      <% end %>
+      <%= button_to emails_path, method:"delete", :class => "ml-3 btn-info" do %>
+        Marquer comme non lu
+      <% end %>
+    </div>
+  </div>
+</div>
